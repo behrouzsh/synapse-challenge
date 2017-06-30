@@ -1,0 +1,111 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>About the project &#8212; synapse_proteomics_challenge 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="author" title="About these documents" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="about-the-project">
+<h1>About the project<a class="headerlink" href="#about-the-project" title="Permalink to this headline">¶</a></h1>
+<p><strong>Subchallenge 1: Imputation of Missing Values in Proteomics Data</strong>
+Proteomic profiling data from mass spectrometry based experiments often contain a large number of missing values due to the dynamic nature of the mass spectrometry instruments. This imposes a great challenge to data analyses, as many (advanced) data analysis tools/models cannot deal with missing values. And no doubt, it is far from satisfactory if one only focuses on the small portion of proteins/peptides with complete measurements when analyzing proteomics data. Therefore, it would be a key advantage to effectively impute the missing values in these proteomics data sets, which can be achieved by borrowing information across proteins.
+In this subchallenge, we provide participants 10 training data matrices, which were simulated based on CPTAC breast cancer global proteomics data [2]. Each data matrix (NxP) represents protein abundances of P proteins from N samples. Missing values in these matrices were generated to mimic the missing patterns in the real data. The participants are asked to create models to impute the missing values in these abundance matrices. The complete data matrix (NxP, without any missingness) that were used to generate the 10 training data matrices is also provided to the participants to facilitate the model development.</p>
+<p><strong>Subchallenge 2: Predict Protein Abundances based on Genomics Information,</strong>
+Proteins are almost always the key functional biomolecule in the cell. Despite the central dogma of information transfer from RNA to protein, many groups have shown that RNA abundances are only weakly predictive of protein abundance (R2 = ~0.1-0.4)[3]. Further, for cost and technical reasons, RNA and DNA data are both cheaper to generate and more widely available than protein data across the research community as a whole. As a result, functional inference would be greatly improved by robust models to predict protein abundance from RNA and DNA data. We will give participants an abundance matrix of K proteins along with a matrix of RNA expression and copy number alterations. The participants are asked to create models to predict the abundances of the K proteins from gene expression and copy number alterations.</p>
+<p>Subchallenge 3: Phosphorylation Identification
+Protein activity and thereby cellular functioning is often determined by several factors, most critically post-translational modifications (PTMs). While proteomic approaches can sometimes detect PTMs directly in an unsupervised way, more typically enrichment is done for profiling specific PTMs, primarily phosphorylation. CPTAC has been routinely profiling phosphorylated proteins in individual tumours. These experiments are both expensive and difficult to use in clinical practice, among other things, due to its transient nature. Yet, better understanding of phosphorylation status would improve biomarker development and other studies. As a result, functional inference would be greatly improved by robust models to predict phosphoprotein abundances from more easily available data. We give participants a collection of phosphoproteomics, global proteomics, gene expression and DNA copy number alteration data of a same set of tumor samples. We ask them to learn a model that can predict phosphosite abundances based on other omics information (global proteomics profiles, RNA expression, and CNV) from the same individual.</p>
+<ul class="simple">
+<li>django CMS</li>
+<li>Arkestra</li>
+<li>Django</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/about.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, behrouzsh.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/about.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
