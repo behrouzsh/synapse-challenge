@@ -1,0 +1,16 @@
+############
+How to impprt the data
+############
+
+* Challenge one:
+   1- import synapseclient
+   
+   2- import synapseutils
+
+   3- syn = synapseclient.Synapse()
+   
+   4- syn.login('synapse_username','password')
+   
+   5- files = synapseutils.syncFromSynapse(syn, 'syn10139511')
+
+
